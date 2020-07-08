@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Company;
+use App\Quote;
 use Session;
 use DateTime;
 
 use App\Http\Requests\StoreCompanyBlogPost;
 use Illuminate\Http\Request;
-use RealRashid\SweetAlert\Facades\Alert;
+use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Collection;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 
 
@@ -22,7 +25,6 @@ class CompanyController extends Controller
     public function index()
     {
         $companies = Company::paginate(5);
-
         return view('companies.index' , ['companies' => $companies]);
     }
 
@@ -78,12 +80,12 @@ class CompanyController extends Controller
                 'End_Date' => date('Y-m-d',strtotime($validated['End_Date'])),
             ]);
             $company->save();
-
             return redirect()->route('companies.show', $company->id)->withToastSuccess('Successfuly Saved Data!');
         } else{
             return redirect('companies/create')->withToastError('Wrong company symbol!');
         }
     }
+
 
     /**
      * Display the specified resource.
@@ -109,5 +111,7 @@ class CompanyController extends Controller
 
         return view('companies.show',['company'=>$company , 'data' => $data]);
     }
+
+
 
 }

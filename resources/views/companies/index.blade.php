@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="jumbotron">
-                <h1 class="display-4">All searches of companies symbols are appeared here!</h1>
+                <h1 class="display-4  text-center">All searches of companies symbols appear here!</h1>
 
             </div>
         </div>
@@ -47,7 +47,7 @@
             var _token = $("input[name=_token]").val();
             $.ajax({
                 url:"{{ route('company.fetch') }}",
-                method:"POST",
+                method:"GET",
                 data:{_token:_token, page:page},
                 success:function(data) {
                     $('#table_data').html(data);

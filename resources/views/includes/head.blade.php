@@ -18,14 +18,20 @@
 
 <style>
     .heading{
-        font-family:  'Roboto Slab', serif;
+        font-family:  Arial;
         font-size: 18px;
 
     }
 
-    .heading span{
+    h1{
+        color: #3578AD;
+        font-family:'Comic Sans MS, Comic Sans, cursive';
+    }
+
+    .col-md-4 span{
         font-weight:bold;
         font-size:23px;
+        font-family:  Arial;
     }
 
 </style>

@@ -32,7 +32,7 @@ Route::resource('companies', 'CompanyController')->except(['edit', 'update', 'de
 /*
  * Post Route for fetching the next records which are saved in the database.
  */
-Route::post('companies/fetch', 'CompanyController@fetch')->name('company.fetch');
+Route::get('companies/fetch', 'CompanyController@fetch')->name('company.fetch');
 
 //Route::group(['middleware'=>['auth']],function(){
 //

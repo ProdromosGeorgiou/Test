@@ -16,7 +16,7 @@ data are included.  The content of each page is yielded.-->
 </div>
 
 <hr class="pt-4">
-<p class="text-center">Footer - Prodromos Georgiou</p>
+<p class="text-center ">Footer - Prodromos Georgiou</p>
 
 @include('includes.scripts')
 @stack('js')

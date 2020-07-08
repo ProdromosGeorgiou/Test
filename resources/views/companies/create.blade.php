@@ -8,13 +8,13 @@ of the selected company symbol and dates.
 
     <div class="row">
         <div class="col-md-12 col-md-offset-2">
-            <h1 class="text-center">Insert Data</h1>
+            <h1 class="text-center">Fill Data to Display Historical Quotes</h1>
             <hr class="my-4">
 
             {!! Form::open(array('url' => route('companies.store'), 'id'=>'parsley-form')) !!}
 
             <div class="form-group">
-                <label name = "Email">Email:</label>
+                <label class="control-label col-sm-2" name = "Email" >Email:</label>
                 <input id="Email" name="Email" class="form-control" placeholder="Email.." value="{{old('Email')}}" required data-parsley-type="email" data-parsley-trigger="keyup">
             </div>
 
@@ -43,6 +43,7 @@ of the selected company symbol and dates.
                 <label name = "Start_Date">Start Date:</label>
 
                 <input  id="Start_Date" name="Start_Date" class="form-control date" value="{{old('Start_Date')}}" required>
+
             </div>
 
             @if($errors->has('Start_Date'))
@@ -79,7 +80,8 @@ of the selected company symbol and dates.
             format: 'yyyy/mm/dd',
             autoclose: true,
             changeYear: true,
-            todayHighlight: true
+            todayHighlight: true,
+            maxDate: 0,
         });
 
         $('.select2-multi').select2();

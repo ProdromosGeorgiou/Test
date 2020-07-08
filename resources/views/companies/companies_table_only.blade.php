@@ -6,6 +6,7 @@
             <th>#</th>
             <th>Company Symbol</th>
             <th>Email</th>
+            <th>Time Created</th>
             <th></th>
         </tr>
 
@@ -14,8 +15,10 @@
                 <td>{{$companies->firstItem()+ $key}}</td>
                 <td>{{ $company->Company_Symbol }}</td>
                 <td>{{ $company->Email }}</td>
+                <td>{{$company->created_at->diffForHumans()}}</td>
                 <td>
-                    <a href="{{route('companies.show', $company->id)}}" class="btn btn-primary btn">View Historical Quotes</a>
+                    <a href="{{route('companies.show', $company->id)}}" class="btn btn-primary btn">Historical Quotes  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </a>
                 </td>
             </tr>
         @endforeach

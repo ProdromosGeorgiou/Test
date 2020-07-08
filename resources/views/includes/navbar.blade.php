@@ -16,7 +16,7 @@
         </ul>
         <ul class="navbar-nav navbar-right">
             <li>
-                <b>{{'Guest'}}</b>
+                <b><i class="fa fa-user mr-2" aria-hidden="true"></i>{{'Guest'}}</b>
             </li>
         </ul>
     </div>
