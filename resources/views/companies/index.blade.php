@@ -16,17 +16,15 @@
     </div><!-- end of jumbotron container -->
 
 
-    @csrf
+@csrf
 <div class="row">
     <div class="col-md-12">
         @if(count($companies)>0)
-    <div class="table-responsive " id="table_data">
+    <div id="table_data">
         @include('companies.companies_table_only',['companies'=>$companies])
     </div>
         @else
-        <h1  class="text-center">
-            No records are saved in the database.
-        </h1>
+        <h1  class="text-center">No records are saved in the database.</h1>
         @endif
     </div>
 </div>
@@ -34,26 +32,30 @@
 
 @endsection
 
-<script>
+@push('js')
+
+<script type="text/javascript">
     $(document).ready(function(){
-        $(document).on('click', '.page-link', function(event){
+        $(document).on('click', '.pagination a', function(event){
             event.preventDefault();
-            var page = $(this).attr('href').split('page=')[1];
+            var page = $(this).attr('href').split("page=")[1];
+            console.log($(this).attr('href'));
             fetch_company_symbol(page);
         });
 
         function fetch_company_symbol(page)
         {
-            var _token = $("input[name=_token]").val();
             $.ajax({
-                url:"{{ route('company.fetch') }}",
-                method:"GET",
-                data:{_token:_token, page:page},
+                url: "/pagination/fetch_data?page=" +page,
                 success:function(data) {
                     $('#table_data').html(data);
+                },
+                fail:function(){
+                    console.log('failed to load data.')
                 }
             });
         }
 
     });
 </script>
+    @endpush

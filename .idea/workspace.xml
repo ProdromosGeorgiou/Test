@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="134dd6fe-a05e-45d5-9aa9-a5d37a7d78ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/45.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Company.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/companies/companies_table_only.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/companies/companies_table_only.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/companies/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/companies/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/companies/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/companies/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/companies/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/companies/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +166,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../holidays" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CMSProject" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -219,7 +212,10 @@
       <workItem from="1594102806146" duration="13732000" />
       <workItem from="1594120741441" duration="8686000" />
       <workItem from="1594134608163" duration="8515000" />
-      <workItem from="1594193756950" duration="30515000" />
+      <workItem from="1594193756950" duration="30786000" />
+      <workItem from="1594245217308" duration="1529000" />
+      <workItem from="1594276314154" duration="1793000" />
+      <workItem from="1594279378710" duration="4428000" />
     </task>
     <servers />
   </component>
@@ -234,11 +230,11 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1594218708409" />
-    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1594218698801">
+    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1594279652357">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1594218698801" />
-    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1593352646100" />
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1594245591281" />
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1594279652357" />
     <state width="1601" height="230" key="GridCell.Tab.0.bottom" timestamp="1592149745259">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -255,11 +251,11 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1601" height="230" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1592149745259" />
-    <state x="351" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1594193764621">
+    <state x="351" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1594279378447">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="351" y="257" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1594193764621" />
-    <state x="351" y="257" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1593352634906" />
+    <state x="351" y="257" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1594276315692" />
+    <state x="351" y="257" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1594279378447" />
     <state x="92" y="92" width="1416" height="676" key="dock-window-1" timestamp="1592075155405">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

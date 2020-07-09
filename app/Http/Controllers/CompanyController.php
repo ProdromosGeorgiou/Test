@@ -22,9 +22,13 @@ class CompanyController extends Controller
      * Paginate each time 5 entries.
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $companies = Company::paginate(5);
+//        if($request->ajax())
+//        {
+//            return view('companies.companies_table_only', ['companies' => $companies])->render();
+//        }
         return view('companies.index' , ['companies' => $companies]);
     }
 
@@ -33,12 +37,13 @@ class CompanyController extends Controller
      * and render them.
      * @return mixed
      */
-    public function fetch(Request $request)
+    public function fetch_data(Request $request)
     {
+
         if($request->ajax())
         {
-            $companies = Company::simplePaginate(5);
-            return view('companies_table_only', ['companies'=>$companies])->render();
+            $companies = Company::paginate(5);
+            return view('companies.companies_table_only', ['companies' => $companies])->render();
         }
     }
 
