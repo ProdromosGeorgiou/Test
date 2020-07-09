@@ -1,5 +1,11 @@
 <?php
-
+/*
+ * This class specifies the validation rules of the companies.
+ * All the attributes of the company are required.
+ * The Start_Date should be a valid date and a day before tomorrow.
+ * The End_Date should be a valid date, after or equal the Start_Date and a day before tomorrow.
+ * The Email should be a valid email address.
+ */
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;

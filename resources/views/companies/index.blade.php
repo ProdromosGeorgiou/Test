@@ -1,4 +1,4 @@
-<!-- This blade shows all the registered companies symbols which are saved in database.
+<!-- This blade shows all searches of the form.
  By selecting the "View Historical Quotes" button you are redirected to show blade.
  Only five records are viewed each time (pagination).
  -->
@@ -16,7 +16,7 @@
     </div><!-- end of jumbotron container -->
 
 
-@csrf
+{{--@csrf--}}
 <div class="row">
     <div class="col-md-12">
         @if(count($companies)>0)

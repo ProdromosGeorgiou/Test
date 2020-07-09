@@ -1,6 +1,7 @@
-<!-- Create New Company form.  Displays the appropriate messages when wrong input is given.
-If the input is validated you are redirected to the show blade to view the historical quotes
-of the selected company symbol and dates.
+<!-- Create New Company form. The user has to fill the form.
+ Displays the appropriate messages when wrong input is given.
+If the input is validated you are redirected to the show blade
+to view the historical quotes of the selected company symbol and dates.
  -->
 @extends('main')
 

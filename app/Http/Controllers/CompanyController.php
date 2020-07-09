@@ -19,27 +19,23 @@ class CompanyController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * Paginate each time 5 entries.
+     * Paginate each time 5 recordss.
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request)
     {
         $companies = Company::paginate(5);
-//        if($request->ajax())
-//        {
-//            return view('companies.companies_table_only', ['companies' => $companies])->render();
-//        }
+
         return view('companies.index' , ['companies' => $companies]);
     }
 
     /**
-     * If request exists, paginate the next five entries of the companies table
-     * and render them.
+     * If ajax request exists, paginate the next five entries of the companies table
+     * and render them to the view.
      * @return mixed
      */
     public function fetch_data(Request $request)
     {
-
         if($request->ajax())
         {
             $companies = Company::paginate(5);
@@ -116,7 +112,5 @@ class CompanyController extends Controller
 
         return view('companies.show',['company'=>$company , 'data' => $data]);
     }
-
-
 
 }

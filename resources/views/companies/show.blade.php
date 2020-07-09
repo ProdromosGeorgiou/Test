@@ -1,4 +1,4 @@
-<!-- All the details of a certain article appear here-->
+<!-- All the details of a certain company symbol and the historical quotes appear here.-->
 @extends('main')
 
 @section('content')
@@ -97,7 +97,7 @@
                 </tbody>
             </table>
                 @else
-            <h5 class="text-center pt-4">No historical quotes to display by specific dates and company symbol chosen.</h5>
+            <h5 class="pt-4">No historical quotes to display by specific dates and company symbol chosen.</h5>
                 @endif
 
         </div>

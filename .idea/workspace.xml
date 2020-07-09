@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="134dd6fe-a05e-45d5-9aa9-a5d37a7d78ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/image/45.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Company.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/companies/companies_table_only.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/companies/companies_table_only.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreCompanyBlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StoreCompanyBlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/companies/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/companies/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/companies/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/companies/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/companies/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/companies/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +217,7 @@
       <workItem from="1594193756950" duration="30786000" />
       <workItem from="1594245217308" duration="1529000" />
       <workItem from="1594276314154" duration="1793000" />
-      <workItem from="1594279378710" duration="4428000" />
+      <workItem from="1594279378710" duration="6756000" />
     </task>
     <servers />
   </component>
